@@ -1,0 +1,16 @@
+﻿{
+  "Group": "Widgets",
+  "FriendlyName": "Nop Manual",
+  "SystemName": "Widgets.Manual",
+  "Version": "1.34",
+  "SupportedVersions": [
+    "4.20"
+  ],
+  "Author": "nopCommerce team",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Widgets.Manual.dll",
+  "Description": "This plugin allows you to change the contents of main page slider",
+  "LimitedToStores": [],
+  "LimitedToCustomerRoles": [],
+  "DependsOnSystemNames": null
+}

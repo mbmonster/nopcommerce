@@ -1,0 +1,56 @@
+﻿@model Nop.Plugin.Widgets.Manual.Models.ConfigurationModel
+
+@{
+    Layout = "_ConfigurePlugin";
+}
+
+@await Component.InvokeAsync("StoreScopeConfiguration")
+<form asp-controller="WidgetsManual" asp-action="Configure" method="post">
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Run
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <div class="col-md-3">
+                        Title
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="Title" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-9 col-md-offset-3">
+                        <input type="submit" name="save" class="btn bg-blue" value="Run" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<form asp-controller="WidgetsManual" asp-action="Reset" method="post">
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Reset
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <div class="col-md-3">
+                        Title
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="Title" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-9 col-md-offset-3">
+                        <input type="submit" name="save" class="btn bg-blue" value="Run" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
